@@ -1,0 +1,26 @@
+# Lab 02
+
+## Domeniul ales
+
+Domeniul este muzica: un catalog de piese din Spotify. Fiecare item este o piesa,
+descrisa prin titlu, artist, album, gen, popularitate si caracteristicile audio calculate
+de Spotify (`danceability`, `energy`, `valence`, `tempo` etc.).
+
+## Sursa datelor
+
+- Dataset: [Spotify Music Dataset](https://www.kaggle.com/datasets/solomonameh/spotify-music-dataset)
+
+## Volumul datelor
+
+Am redus setul la 1500 de piese
+
+## Proprietatile inregistrate in Recombee
+
+Am ales urmatoarele proprietati:
+
+| Nr. | Proprietate | Tip de date | Descriere |
+| :--- | :--- | :--- | :--- |
+| 1 | `track_name` | `string` | Titlul piesei |
+| 2 | `track_artist` | `string` | Artistul/artistii |
+| 3 | `popularity` | `int` | Popularitatea pe Spotify (0–100) |
+| 4 | `danceability` | `double` | Cat de potrivita este piesa pentru dans (0–1) |
