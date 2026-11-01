@@ -24,3 +24,13 @@ Am ales urmatoarele proprietati:
 | 2 | `track_artist` | `string` | Artistul/artistii |
 | 3 | `popularity` | `int` | Popularitatea pe Spotify (0–100) |
 | 4 | `danceability` | `double` | Cat de potrivita este piesa pentru dans (0–1) |
+
+## Trimiterea item-urilor in Recombee
+
+Scriptul `recombee_items.py` citeste dataset-ul si trimite piesele in baza de date Recombee 
+`mystore-dev`, in loturi (`Batch`) de cate 100 de cereri `SetItemValues`.
+
+## Rezultat
+
+Datele au fost incarcate cu succes in Recombee: **1500 de item-uri**, toate cu atributele
+completate, vizibile in Recombee Admin UI la *Items*.
